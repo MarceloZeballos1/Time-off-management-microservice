@@ -47,6 +47,12 @@ Our testing strategy ensures that 100% of the critical business logic is covered
 
 The screenshots `coverage_report.png` and `e2e_results.png` are the visual proofs of the 88.23% coverage.
 
+### Coverage Report
+![Coverage Report](coverage_report.png)
+
+### E2E Integration Results
+![E2E Results](e2e_results.png)
+
 To view the coverage report:
 ```bash
 cd time-off-service ; npm run test:cov
