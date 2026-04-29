@@ -1,5 +1,8 @@
 # Time-Off Microservice - Take Home Exercise
 
+## Repository and Submission
+**GitHub Link:** [(https://github.com/MarceloZeballos1/Time-off-management-microservice)]
+
 ## Introduction
 This microservice manages employee vacation requests. It uses a local SQLite database to store balances so the application stays fast and reliable, even if the external Human Capital Management (HCM) system is slow or temporarily offline.
 
@@ -41,6 +44,8 @@ Our testing strategy ensures that 100% of the critical business logic is covered
 - **Balance Calculation:** Safely tracking available days.
 - **Race Conditions:** Preventing multiple fast clicks from booking the same balance.
 - **Self-Healing:** Synchronizing properly if the HCM adds "Anniversary" days.
+
+The screenshots `coverage_report.png` and `e2e_results.png` are the visual proofs of the 88.23% coverage.
 
 To view the coverage report:
 ```bash
