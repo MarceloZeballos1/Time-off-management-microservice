@@ -1,0 +1,20 @@
+{
+  "name": "time-off-project",
+  "version": "1.0.0",
+  "description": "Root workspace for Time-Off Service and Mock HCM",
+  "scripts": {
+    "start:mock": "npm run start --prefix mock-hcm-server",
+    "start:service": "npm run start:dev --prefix time-off-service",
+    "dev": "concurrently \"npm run start:mock\" \"npm run start:service\"",
+    "test": "cd time-off-service ; npm run test ; npm run test:e2e",
+    "test:cov": "cd time-off-service ; npm run test:cov",
+    "seed": "node ./scripts/seed-db.js",
+    "clean": "npx rimraf time-off-service/dist time-off-service/time-off.sqlite"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.5"
+  }
+}
